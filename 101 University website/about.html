@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>CodeEd Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/6199cba9a7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="courses.html">COURSES</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+
+        </section>
+
+
+<!-----------About us content---------->
+
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Supporting women around the world</h1>
+            <p>CodeEd offers accelerated-learning bootcamps to help people transform careers at pace. 
+                Our courses are designed to be intense without compromising learning outcomes.
+                What makes us unique is the way we bring together our expertise in education with industry leaders.
+                We can be highly responsive and agile, unlike traditional providers. 
+                This means we are always relevant in producing industry-ready graduates. 
+                
+            </p>
+                <a href="contact.html" class="hero-btn purple-btn">GET IN TOUCH</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg">
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<!-------Footer------->
+<section class="footer">
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Website made by Kitty Chan <i class="fa-solid fa-heart"></i></p>
+</section>
+
+        <!------JavaScript for Toggle Menu------>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>
